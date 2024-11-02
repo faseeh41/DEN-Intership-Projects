@@ -68,3 +68,74 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">TASK 5</div>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Reservation Form</h2>
+      <form id="reservationForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <small class="error-message" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <small class="error-message" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{11}"
+            required
+          />
+          <small class="error-message" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Reservation Date</label>
+          <input type="date" id="date" name="date" required />
+          <small class="error-message" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="guests">Number of Guests</label>
+          <input type="number" id="guests" name="guests" min="1" required />
+          <small class="error-message" aria-live="polite"></small>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>
+        Coded by M. Faseeh Hassan. Open sourced on
+        <a href="https://github.com/faseeh41" target="_blank">GitHub</a>. Hosted
+        on Vercel.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

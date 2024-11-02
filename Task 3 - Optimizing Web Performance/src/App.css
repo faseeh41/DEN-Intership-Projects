@@ -1,0 +1,72 @@
+/* App.css */
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: #0044cc;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #0044cc;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+p {
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Service section */
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.service {
+  text-align: center;
+  max-width: 300px;
+  margin: 20px;
+}
+
+.service img {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service img:hover {
+  transform: scale(1.05);
+}
+
+.service p {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
